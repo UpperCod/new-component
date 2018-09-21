@@ -19,7 +19,7 @@ export default {
     ],
     onSubmit(data) {
         data.$source = data.component;
-        data.$dist = data.name = data.name.replace(/[^\w]+/g, "-");
+        data.name = data.name.replace(/[^\w]+/g, "-");
         return data;
     }
 };
